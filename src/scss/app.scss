@@ -1,21 +1,11 @@
 
-@use 'base/variables' as *;
+@forward 'base';
+@forward 'layout';
 
 
 
-body{
-    // <uniquifier>: Use a unique and descriptive class name
-// <weight>: Use a value from 100 to 900
-font-family:$fuente-principal;
-font-optical-sizing: auto;
-
-font-style: normal;
-text-align: center;
 
 
-
-  
-}
 
 
 
