@@ -1,32 +1,40 @@
 @use '../base/variables' as *;
-@use '../base/mixins' as *;
+@use '../base/mixins' as m;
 .header{
     background-color: $verde;
 
 
-   @include tablet{
-    color: aqua;
-   }
-   @include telefono{
-    color: aqua;
-   }
- 
+   
+  
     
     .contenido-header{
         padding: 2rem;
-        display: flex;
-        justify-content: space-between;
-        align-items: center;
+        @include m.tableta{
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+
+
+        }
     }
     h1{
        color: $blanco;
-       margin: 0;
+       text-align: center;
+       @include m.tableta {
+        text-align: left;
+        margin: 0;
+       }
    }
 }
 
 .navegacion-principal{
     display: flex;
+    flex-direction: column;
+    align-items: center;
     gap: 2rem;
+    @include m.tableta{
+        flex-direction: row;
+    }
     a{
         color:$blanco;
         &:hover{

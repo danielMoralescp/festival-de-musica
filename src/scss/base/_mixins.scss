@@ -7,7 +7,7 @@
 }
 
 
-@mixin tablet {
+@mixin tableta {
     @media (min-width: $tablet){
         @content;
     }
@@ -20,8 +20,8 @@
 }
 
 
-@mixin total {
-    @media (min-width: $total){
+@mixin aparatogrande {
+    @media (min-width: $grande){
         @content;
     }
 }
